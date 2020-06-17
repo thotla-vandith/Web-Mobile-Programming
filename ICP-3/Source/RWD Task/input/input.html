@@ -1,0 +1,100 @@
+<!-- Responsive Web Design-->
+<!DOCTYPE html>
+<!--
+TODO:
+1.Enter your name in h1 and designation in h3
+2.Replace all the placeholder images with suitable images of the same size reflecting you and your projects.Feel free to use the sample images provided
+3.Replace the content of headings App1,App2,App3,App4 with suitable headings of your projects & provide their github links in the corresponding links
+4.Make all the elements in the page responsive & align its content as shown in the output sample with the above mentioned using bootstrap
+-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>RWD ICP-3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap-4.5.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap-4.5.0-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap-4.5.0-dist/css/bootstrap-reboot.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<script type="text/javascript" src="../bootstrap-4.5.0-dist/js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="../bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+</head>
+<!--Selecting the Colors for the Side bar -->
+<style>
+    #color1 {
+        height: 50px; width:50px;
+        background-color: Coral;
+    }
+    #color2 {
+        height: 50px; width:50px;
+        background-color: Deepskyblue;
+    }
+</style>
+<body>
+<div class="container-fluid" style="background-color: Darkslategray">
+    <br><br>
+    <div class="col-sm-2 sidenav">
+    </div>
+    <!-- My image here-->
+        <div class="media">
+            <div class="media-left">
+                <div style="padding-bottom: 10px; float: left" class="col-sm-4"><img src="../SampleImages/vandith.jpg"
+                                                                                     style="width:100px;height:100px"></div>
+            </div>
+            <!--My Info here -->
+            <div class="media-body">
+                <h1 class="media-heading" align="right" style="font-family: raleway; color: white">VANDITH THOTLA</h1>
+                <h3 align="right" style="font-family: raleway ; color: white">Graduate Student</h3>
+            </div>
+
+        </div>
+    <!-- Fixed Side Bar here-->
+    <div class="col-sm-2" style="font-family: raleway">
+        <div class="row">
+            <div class="col-sm-2, float-left" style="padding-left: 5px">
+                <p style="color:snow;padding-bottom:5px; float: left ; writing-mode: vertical-rl; text-orientation: upright;">FIXED SIDE BAR</p>
+            </div>
+            <div class="col-sm-10, float-left" style="padding-left: 5px">
+                <p id="color1" ></p>
+                <p style="color:#FF7F50">#FF7F50</p>
+                <p id="color2"></p>
+                <p style="color:#00BFFF">#00BFFF</p>
+            </div>
+        </div>
+    </div>
+    <!-- SAme as teh reference in the source code but with 3 project github links added-->
+    <div class="col-sm-10" style="font-family: raleway">
+        <div>
+            <img style="width: 100%; height: auto;" src="../SampleImages/code-wallpaper.jpg">
+        </div>
+        <div>
+            <br><p style="font-size:20px; font-family: raleway; color: snow; padding-bottom: 10px">Featured Work</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img style="text-align: center;max-width: 255px;max-height: 255px;min-height: 100%" src="../SampleImages/github.png">
+                    <h3 style="padding-top: 10px;text-align: center" class="dark">Web ICP-1</h3>
+                    <p class="light" style="text-align: center"><a class="light" href="https://github.com/thotla-vandith/Web-Mobile-Programming/wiki/Web_ICP1">Link to Project</a></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img style="text-align: center;max-width:255px;max-height:225px ;min-height: 225px" src="../SampleImages/html.jpg">
+                    <h3 style="padding-top: 10px;text-align: center" class="dark">Web ICP-2</h3>
+                    <p class="light" style="text-align: center"><a class="light" href="https://github.com/thotla-vandith/Web-Mobile-Programming/wiki/Web_ICP2">Link to Project</a></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img style="text-align: center;max-width:500px;max-height:225px ;min-height: 225px" src="../SampleImages/javascript.png">
+                    <h3 style="padding-top: 10px;text-align: center" class="dark">Web ICP-3</h3>
+                    <p class="light" style="text-align: center"><a class="light" href="https://github.com/thotla-vandith/Web-Mobile-Programming/wiki/Web_ICP3">Link to Project</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
