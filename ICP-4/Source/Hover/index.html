@@ -1,0 +1,38 @@
+<!--HTML code for hovering images-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Art Gallery</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="hovering.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js'> </script>
+
+</head>
+<body style="font-family: 'Brush Script MT'">
+<!--Header here-->
+<header>
+    <h2 style="text-align: center ; font-size: 40px">Vandith's Art Gallery</h2>
+</header>
+<!--Display area after hovering the preview image-->
+<div id="image">
+    Please hover over below images.
+</div>
+<!--My 3 drawings as the images here-->
+<img alt="EMMA WATSON" class="preview" id="img1"
+     onmouseout="unDo()"
+     onmouseover="upDate(this)"
+     src="https://github.com/thotla-vandith/Web-Mobile-Programming/blob/master/ICP-4/Documentation/Hover/Emma%20Watson.jpg?raw=true">
+
+<img alt="HUGH JACKMAN" class="preview" id="img2"
+     onmouseout="unDo()"
+     onmouseover="upDate(this)"
+     src="https://github.com/thotla-vandith/Web-Mobile-Programming/blob/master/ICP-4/Documentation/Hover/Logan.jpg?raw=true">
+
+<img alt="SPIDER - GIRL" class="preview" id="img3"
+     onmouseout="unDo()"
+     onmouseover="upDate(this)"
+     src="https://github.com/thotla-vandith/Web-Mobile-Programming/blob/master/ICP-4/Documentation/Hover/Gwen%20Spiderverse.jpg?raw=true">
+</body>
+</html>
