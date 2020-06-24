@@ -1,0 +1,28 @@
+.mr-10 {
+  margin-right: 10px;
+}
+.pt-10 {
+  padding-top:10px;
+}
+.mt-20 {
+  margin-top:20px;
+}
+.todos {
+  width: 70%; border: 1px solid black; padding: 10px 14px; margin: 20px auto;
+}
+.delete {
+  float: right;
+}
+.list-item-card.completed {
+  border-left:10px solid green;
+}
+.list-card {
+  padding: 0px;
+}
+.list-item-card {
+  list-style: none; border: 1px solid #ccc; padding: 10px 14px; margin: 10px auto; box-shadow: 2px 2px #ccc; border-radius: 10px;
+}
+.save-button{
+  background-color: steelblue; border: none; color: white; padding: auto; text-align: center; text-decoration: none;
+  display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;
+}

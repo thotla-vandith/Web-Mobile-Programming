@@ -1,0 +1,54 @@
+<!--HTML file for ToDo and Timer program-->
+<html lang="en" >
+<head><style>
+    body{background-color: #2F4F4F}
+</style></head>
+<body>
+<!--Header here-->
+<div class="todos" style="background-color: lavender; padding-bottom: 10px">
+  <header class="text-center" style="padding-bottom: 20px; padding-top: 20px">
+    <h3><b>Todo List & Countdown Timer</b></h3>
+  </header>
+<!--Timer Code Here-->
+  <form>
+    <div class="row">
+    <div class="col-5">
+      <input type="datetime-local" class="form-control" id="tasktime" [(ngModel)]="time" name="time">
+    </div>
+    <div class="col-2">
+      <button type="button" class="save-button" (click)="saveTimer()">Start Timer</button>
+    </div>
+      <div *ngIf="countDownTimes">
+        <button class="btn btn-primary mr-10">{{countDownTimes.days + 'd'}}</button>
+        <button class="btn btn-primary mr-10">{{countDownTimes.hours + 'h'}}</button>
+        <button class="btn btn-primary mr-10">{{countDownTimes.minutes + 'm'}}</button>
+        <button class="btn btn-primary mr-10">{{countDownTimes.seconds + 's'}}</button>
+      </div>
+    </div>
+  </form>
+<br>
+  <!-- Form for the todo user input-->
+  <form>
+    <div class="row">
+      <div class="col-5">
+        <input type="text" class="form-control" placeholder="Enter ToDo name" name="todo" [(ngModel)]="todo">
+      </div>
+      <div class="col-2">
+        <button type="button" class="save-button" (click)="saveTodo()">Add New</button>
+      </div>
+    </div>
+  </form>
+  <div class="todo-list mt-20">
+    <ul class="todo-list list-card">
+      <li class="list-item-card pt-10" *ngFor="let todo of todos;let i=index" [class.completed]="todo.completed">
+        <div class="view">
+          <input class="toggle mr-10" type="checkbox" (click)="toggleTodoComplete(i)" [checked]="todo.completed">
+          <label class="mr-10">{{todo.name}}</label>
+          <button class="btn btn-danger delete mr-10" (click)="removeTodo(i)">Delete</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
