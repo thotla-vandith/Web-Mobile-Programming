@@ -11,7 +11,7 @@ function getGithubInfo(user) {
     }).done(function(data){
         showUser(data);
     }).fail(function(){
-        console.log("ERROR");
+        console.log("ERROR!!");
         noSuchUser(user);
     });
 }
