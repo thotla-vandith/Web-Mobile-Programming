@@ -11,26 +11,25 @@ function getGithubInfo(user) {
     }).done(function(data){
         showUser(data);
     }).fail(function(){
-        console.log("Some error Happened");
+        console.log("ERROR");
         noSuchUser(user);
     });
 }
 //function to display the user information
 function showUser(user) {
-    //2. set the contents of the h2 and the two div elements in the div '#profile' with the user content
-    document.getElementById('imgavg').src=user.avatar_url;
-    document.getElementById('txtname').innerText=user.name;
-    document.getElementById('txtid').innerText=user.id;
-    document.getElementById('txturl').href=user.url;
-    document.getElementById('txturl').innerText=user.html_url;
-    document.getElementById('txtrepository').innerText=user.public_repos;
-    document.getElementById('txtfollowers').innerText=user.followers;
-    document.getElementById('txtfollowing').innerText=user.following;
+    document.getElementById('image').src=user.avatar_url;
+    document.getElementById('name').innerText=user.name;
+    document.getElementById('id').innerText=user.id;
+    document.getElementById('giturl').href=user.url;
+    document.getElementById('giturl').innerText=user.html_url;
+    document.getElementById('gitrepo').innerText=user.public_repos;
+    document.getElementById('gitfollowers').innerText=user.followers;
+    document.getElementById('gitfollowing').innerText=user.following;
 }
 function noSuchUser(username) {
     //3. set the elements such that a suitable message is displayed
     if(data.message == "Not Found" || username == '') {
-        alert("User not found");
+        alert("User Not Found");
     }
 }
 $(document).ready(function () {
