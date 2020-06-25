@@ -18,9 +18,9 @@ function getGithubInfo(user) {
 function showUser(user) {
     var giturl='https://www.github.com/'+user;
     //assigning element by id to the respective parameters
-    document.getElementById('image').src=user.avatar_url;
-    document.getElementById('name').innerText=user.name;
-    document.getElementById('id').innerText=user.id;
+    document.getElementById('gitimage').src=user.avatar_url;
+    document.getElementById('gitname').innerText=user.name;
+    document.getElementById('gitid').innerText=user.id;
     document.getElementById('giturl').href=user.url;
     document.getElementById('giturl').innerText=user.html_url;
     document.getElementById('twitter').innerText=user.twitter_username;
@@ -29,8 +29,8 @@ function showUser(user) {
     document.getElementById('gitfollowers').innerText=user.followers;
     document.getElementById('gitfollowing').innerText=user.following;
     document.getElementById('gitbio').innerText=user.bio;
-    document.getElementById('created').innerText=user.created_at;
-    document.getElementById('updated').innerText=user.updated_at;
+    document.getElementById('gitcreated').innerText=user.created_at;
+    document.getElementById('gitupdated').innerText=user.updated_at;
 }
 //noSuchUser function displays message if user not found
 function noSuchUser(username) {
