@@ -10,7 +10,7 @@
 <body style="margin: 30px;border: 1px solid black">
 <!--Header Here-->
 <header style="background: url(https://img.freepik.com/free-vector/blue-cyber-future-technology-concept-background_42077-488.jpg?size=626&ext=jpg);
-background-repeat: no-repeat; background-size: 100% ">
+                background-repeat: no-repeat; background-size: 100% ">
     <h2 style="padding-top: 20px;color: white">GitHub User Finder</h2>
     <h4 style="color: white">Search User Below...</h4>
 </header>
@@ -24,16 +24,22 @@ background-repeat: no-repeat; background-size: 100% ">
     <div id="profile">
         <h2></h2>
         <div class="avatar">
-            <img id="imgavg" width="50%">
+            <img id="gitimage" style="height: 50px; width: 50px">
         </div>
+        <!--Acquiring details from JavaScript based on Element by id-->
         <div class="information" style="padding-left: 10px">
             <table>
-                <tr><td>Name</td> <td><span id="txtname" style="padding-left: 40px"></span></td></tr>
-                <tr><td>ID</td> <td><span id="txtid"style="padding-left: 40px"></span></td></tr>
-                <tr><td>GitHub URL</td> <td><a id="txturl"style="padding-left: 40px"></a></td></tr>
-                <tr><td>Public Repositories</td> <td><span id="txtrepository"style="padding-left: 40px"></span></td></tr>
-                <tr><td>Followers</td> <td><span id="txtfollowers"style="padding-left: 40px"></span></td></tr>
-                <tr><td>Following</td> <td><span id="txtfollowing"style="padding-left: 40px"></span></td></tr>
+                <tr><td>Name</td> <td><span id="gitname" style="padding-left: 40px"></span></td></tr>
+                <tr><td>ID</td> <td><span id="gitid"style="padding-left: 40px"></span></td></tr>
+                <tr><td>GitHub URL</td> <td><a id="giturl"style="padding-left: 40px"></a></td></tr>
+                <tr><td>Twitter ID</td> <td><span id="twitter"style="padding-left: 40px"></span></td></tr>
+                <tr><td>Public Repositories</td> <td><span id="gitrepo"style="padding-left: 40px"></span></td></tr>
+                <tr><td>Public Gists</td> <td><span id="gitgist"style="padding-left: 40px"></span></td></tr>
+                <tr><td>Followers</td> <td><span id="gitfollowers"style="padding-left: 40px"></span></td></tr>
+                <tr><td>Following</td> <td><span id="gitfollowing"style="padding-left: 40px"></span></td></tr>
+                <tr><td>Bio</td> <td><span id="gitbio"style="padding-left: 40px"></span></td></tr>
+                <tr><td>Created at</td> <td><span id="gitcreated"style="padding-left: 40px"></span></td></tr>
+                <tr><td>Updated at</td> <td><span id="gitupdated"style="padding-left: 40px"></span></td></tr>
             </table>
         </div>
     </div>
