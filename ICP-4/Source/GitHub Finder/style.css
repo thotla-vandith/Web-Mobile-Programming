@@ -3,8 +3,6 @@ body {    font-family: sans-serif; border-top: 5px solid #4c4066; margin: 0px au
 }
 header { text-align: center; background-color: #fdfdfd; border-bottom: 1px solid #e5e2e0;
 }
-#logo { position: relative; top: -2px;
-}
 #container { width: 1040px; margin: 0px auto; min-height: 750px; text-align: center;
 }
 input[type='text'] { height: 2.2em; font-size: 1.4em; width: 50%; padding: 5px; margin: 5px;
