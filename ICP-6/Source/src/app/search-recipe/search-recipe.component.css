@@ -1,0 +1,27 @@
+/*CSS File for ICP-6 */
+.parent-container {
+  position: relative;
+  height:100%;
+  width: 100%;
+}
+
+.child-container {
+  color: white;
+  text-align: center;
+  position: center;
+
+}
+/*styles for h1 and h2*/
+h1, h2{
+  font-family: "Copperplate";
+  color: #E0FFFF;
+}
+/*search box color */
+.yum-yum {
+  color: dimgray
+}
+/*style for search bar*/
+.search-bar
+{
+  display:inline-block
+}
