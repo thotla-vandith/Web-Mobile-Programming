@@ -1,0 +1,25 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+.example-full-width {
+  width: 100%;
+}
+.example-full-width:nth-last-child {
+  margin-bottom: 10px;
+}
+.button-row {
+  margin: 5px 0;
+}
+::-webkit-input-placeholder{
+  font-weight: bold;
+}
+.element::-webkit-input-placeholder{
+  font-weight: bold;
+}
+.h2style{
+  font-family: "Calisto MT";
+  text-align: center;
+  color: midnightblue;
+}

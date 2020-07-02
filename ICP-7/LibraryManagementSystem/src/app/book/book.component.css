@@ -1,0 +1,29 @@
+.example-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  min-width: 300px;
+  overflow: auto;
+}
+.head{
+  font-family: "Calisto MT";
+  text-align: center;
+  color: midnightblue;
+}
+.isbn-col {
+  flex: 0 0 100px !important;
+  white-space: unset !important;
+}
+.button-row {
+  margin: 10px 0;
+}
+::-webkit-input-placeholder{
+  font-weight: bold;
+}
+.mat-header-cell{
+  color: midnightblue ;
+  font-weight: bold;
+}
+td{
+  cursor: pointer;
+}
