@@ -1,0 +1,34 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Pizza App</string>
+    <string name="action_settings">Settings</string>
+    <!-- for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <string name="pizza_menu">PIZZA MENU</string>
+    <string name="name_field">Enter your name</string>
+    <string name="topping_field">Select your Toppings:</string>
+    <string name="chicken_field">Chicken</string>
+    <string name="pepperoni_field">Pepperoni</string>
+    <string name="sausage_field">Sausage</string>
+    <string name="veggies_field">Veggies</string>
+    <string name="quantity_field">Quantity:</string>
+    <string name="initial_quantity_value">1</string>
+
+    <!-- For Pizza Order Summary -->
+    <string name="summary_list_name">Name:<xliff:g id="name" example="Vandith">%s</xliff:g></string>
+    <string name="summary_list_chicken"><b>Chicken: </b><xliff:g id="addChicken" example="Yes">%s</xliff:g></string>
+    <string name="summary_list_sausage"><b>Sausage: </b><xliff:g id="addSausage" example="Yes">%s</xliff:g></string>
+    <string name="summary_list_pepperoni"><b>Pepperoni: </b><xliff:g id="addPepperoni" example="Yes">%s</xliff:g></string>
+    <string name="summary_list_veggies"><b>Veggies: </b><xliff:g id="addVeggies" example="Yes">%s</xliff:g></string>
+    <string name="summary_list_extracheese"><b>Extra Cheese: </b><xliff:g id="addCheese" example="Yes">%s</xliff:g></string>
+    <string name="summary_list_quantity"><b>Quantity: </b><xliff:g id="quantity" example="2">%d</xliff:g></string>
+    <string name="summary_list_total_price"><b>Total: </b>$ <xliff:g id="total_price" example="10">%.2f</xliff:g></string>
+    <string name="summary_list_pizza_size"><b>Size: </b>$ <xliff:g id="pizza_size" example="Small">%s</xliff:g></string>
+    <string name="thank_you"><b>Thank you!</b></string>
+
+    <string name="summaryListMessage"><u>Your Pizza Order Summary</u></string>
+</resources>
