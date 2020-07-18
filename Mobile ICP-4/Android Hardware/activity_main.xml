@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="MainActivity">
+
+    <Button
+        android:id="@+id/buttonDisplayLoc"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginLeft="106dp"
+        android:layout_marginTop="135dp"
+        android:background="@layout/rounded_button"
+        android:onClick="openMaps"
+        android:text="where am i ?"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/buttonTakePhoto"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/buttonDisplayLoc"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginLeft="106dp"
+        android:layout_marginTop="45dp"
+        android:background="@layout/rounded_button"
+        android:onClick="takePic"
+        android:text="Capture the moment !"
+        android:textStyle="bold|italic"/>
+
+    <Button
+        android:id="@+id/buttonRecord"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/buttonTakePhoto"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginLeft="106dp"
+        android:layout_marginTop="45dp"
+        android:background="@layout/rounded_button"
+        android:onClick="AudioRec"
+        android:text="wanna sing a song ?"
+        android:textStyle="bold|italic"/>
+
+    <Button
+        android:id="@+id/buttonStorage"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/buttonRecord"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginLeft="106dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="8dp"
+        android:background="@layout/rounded_button"
+        android:onClick="KeepNotes"
+        android:text="Keep Notes !"
+        android:textStyle="bold|italic"/>
+
+</RelativeLayout>
